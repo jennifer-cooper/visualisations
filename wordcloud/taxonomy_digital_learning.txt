@@ -1,0 +1,784 @@
+Contents
+Introduction.........................................................................................................................1
+Section 1: Building an understanding of common terms ................................................2
+Online, virtual or digital learning?.......................................................................................2
+Blended or hybrid learning?...............................................................................................3
+Distance or remote learning?.............................................................................................3
+Face-to-face, in-person, on campus or onsite delivery?.....................................................4
+Social or physical distancing?............................................................................................5
+Section 2: Building a taxonomy of students' digital experience .....................................6
+Passive digital engagement/experience.............................................................................6
+Supportive digital engagement/experience........................................................................7
+Augmented digital engagement/experience.......................................................................8
+Interactive digital engagement/experience.........................................................................9
+Immersive digital engagement/experience.......................................................................10
+Section 3: Building a glossary .........................................................................................11
+Acknowledgements ..........................................................................................................17
+1
+Introduction
+Since March 2020, when QAA published its initial guidance on maintaining quality and
+standards in the crisis, through to a series of thematic guidance and supporting resources,
+our intention has been to support the sector in developing solutions to the unique demands
+that the COVID-19 scenario has placed on providers and the sector at large. QAA is now
+beginning to look beyond the immediate crisis, to develop guidance with the sector and
+support providers in planning for 2020-21 and beyond. Our first publication in this third stage
+of guidance - Preserving Quality and Standards Through a Time of Rapid Change: UK
+Higher Education in 2020-21 - was published on 2 June 2020.
+In developing this paper, we have continued our approach of engaging directly with
+providers and it is the result of a series of conversations that we have undertaken with senior
+colleagues from a broad range of institutions. As a result of COVID-19, most providers have
+had to pivot quickly to a greater use of digital approaches to delivery. It was clear in these
+discussions that the different approaches, and for some the speed of their adoption, have
+highlighted the variety and disparate use of terminology used to describe the digital learning
+experience on offer across the sector. The challenge for providers is, therefore, how to
+effectively communicate and describe what they will be offering their students in 2020-21
+(and beyond) and how they will ensure the quality of this provision.
+By producing this document, QAA aims to help UK higher education providers build a
+common language to describe digital approaches to programme delivery and support them
+in setting students' expectations of their programmes. It looks to define some of the most
+common terms that providers use to describe the ways in which they and their students
+engage with digital teaching and learning. It also seeks to go further and provide broad
+classifications of the type of experience a student can expect when engaging with education
+and training programmes that include digital elements ranging from 'passive' to 'immersive'
+digital engagement and experiences.
+QAA does not intend this document to set out any regulatory requirement for digital
+approaches to learning and teaching. Instead, it is designed to support providers to develop
+their ways of talking about digital methods of delivery, articulating what students can expect
+and therefore better assure themselves that quality and standards are being maintained. It is
+intended to be a starting point for a wider conversation about how providers can talk to
+themselves, each other and students about these differing methods of delivery, in more
+consistent, more easily understood, ways. Following this, QAA will further engage with its
+members in order to determine how a common approach to this terminology can be
+embedded across the sector and will be looking to work with sector agencies in seeking to
+adopt consistent terminologies of digital provision.
+2
+Section 1: Building an understanding of common terms
+While developing this paper, it became apparent that definitions pertaining to digital
+education are being used fluidly, often changing depending on context and the audience.
+It was also clear that this spectrum of description, when talking about an aspect of digital
+education, was not simply different when comparing providers' approaches. Often one term
+may be used by staff at a provider when talking to colleagues, a different term (for the same
+thing) was used when communicating to colleagues outside of their institutions, and a third
+term used when they were communicating with students. The use of these terms may also
+have been influenced by organisational policy, the recent proliferation of regulatory or sector
+guidance, influential individuals or because of a dislike of other terms relating to the same
+thing.
+In attempting to move towards a common way to describe how students may engage with
+digital education, QAA have discussed the diversity of terms that are being used by
+providers to explain what they are offering, and what they plan to offer in the future. The
+most common of these we have captured in our glossary table (in section 3). However, there
+are some commonly used umbrella terms that required more discussion than a simple
+definition. The terms in this section are often used interchangeably but carry with them
+connotations, inferences and historical context that are not immediately obvious and can
+influence people's understanding of an approach to learning. Providers are using them to
+help communicate the different opportunities for learning that they are developing. But the
+differing uses of these terms may lead to misunderstandings and suggest to some students
+that less desirable opportunities are being described.
+Online, virtual or digital learning?
+The term online works well as an umbrella term as it is in common use beyond the UK
+higher education sector; it focuses on the connectivity of the learning, teaching and support
+delivery methods that may be employed by a provider. However, it carries with it the
+connotations that all the learning may be web-based, requiring students to use a connected
+device in order to access any of the learning, teaching and support activities that are on
+offer. There is also the suggestion that online can be considered as happening at a physical
+distance from a provider, when students could be detached from onsite classroom learning.
+Online is also linked to convenience and a lack of engagement with what may previously
+have been a physical, in-person experience (for example, online shopping). Due to these
+connotations, online may be viewed as a less desirable option for those students who want a
+greater degree of social interaction or to physically engage with teaching, learning and
+support activities. Online learning may also be seen as a less desirable option for those
+students who have limited access to stable internet access or no access to appropriate
+devices on which to interact with their learning.
+The term virtual is less widely used in higher education but is again understood beyond
+the sector. It avoids issues suffered by online as it is not inextricably linked with being
+web-based and therefore does not have the same connotations of being delivered at a
+distance from a provider. Virtual often does not denote convenience, instead suggesting that
+the level of engagement required compared to a physical experience will be similar but
+different. This difference to the physical, real experience, however, is one of the implications
+of its use. Some can feel that virtual is linked to artificial, inauthentic, or simply not 'real'
+experiences. As such, some providers only refer to virtual learning in a context where virtual
+reality technology is involved, to avoid any implication of inauthenticity. Due to these
+connotations, virtual may be viewed as a less desirable option for those students who
+want to experience an authentic, 'real', higher education experience.
+3
+The term digital is an umbrella term that is increasing in use in the higher education sector.
+It is inextricably linked to the storage of data but has developed as a term to mean involving
+or relating to the use of computer technology, exemplified by the use of the terms digital
+skills or digital literacy. When compared to analogue, it also has positive connotations for
+some as it suggests that things have developed compared to more traditional ways of doing
+things. It is widely understood that digital information can be accessed offline and it can be
+engaged with in a variety of situations (onsite, or offsite, in-person or remotely). Digital ways
+of working are still linked to the storage and use of information, so it also does not carry with
+it any suggestion of being inauthentic. Therefore, digital does not seem to have the same
+connotations as online or virtual and instead seems to be a more neutral term. Its use,
+therefore, could give providers a greater opportunity to go further than just using the term
+and articulate what a digital learning approach would look like for their students.
+Blended or hybrid learning?
+Blended learning and hybrid learning are terms that are used interchangeably by providers
+when describing different models of delivery which use a mix of methods to engage students
+in learning. Blended is the more commonly used term of the two and is applied in several
+different ways to describe different models of delivery and/or student engagement. Hybrid
+is not as prevalent in the UK higher education sector. Providers use both to describe
+students' engagement with learning that takes place partly in a digital environment (either
+onsite or remotely) and partly in-person, onsite.
+The proportions of the different types of engagement can vary considerably from programme
+to programme and can refer to individual modules or the whole programme being a mix of
+approaches. However, as blended has historically been the most prevalent, there is a
+greater variety of models of delivery to which this term has been associated. Some
+institutions use the term blended, particularly internally, as a generic term for provision that
+includes any element of digital learning. Blended is also associated with models of delivery
+which require students to engage with timetabled onsite learning activities across the
+academic year, in addition to engaging with digital learning activities between these times. It
+is also used where there is not a requirement for regular onsite attendance, but there may be
+options for students to attend in person should they choose (for example, residential study
+weekends).
+While hybrid learning is not as prevalent, it has begun to be used by some providers to
+describe programmes designed to provide students with a greater degree of choice as to
+how they engage with their learning. Where this is the case, programmes have been
+designed to be delivered both onsite and remotely, allowing students to move between the
+two methods of delivery seamlessly. Students are therefore given agency to construct their
+own ways of engaging with these hybrid programmes, defining how much they want to
+engage with the onsite or digital learning activities. However, while there may be some
+differences in the connotations between the two terms, we have not found any fundamental
+difference in what they describe. Therefore, providers should always ensure that there is
+clarity in any communication they have with students when using blended or hybrid to
+describe the methods of delivery of their programmes. Given the breadth of different models
+these terms are used to describe, further information will always be needed to avoid any
+potential misunderstandings about what students should expect from their learning.
+Distance or remote learning?
+Distance learning and remote learning are terms that are used interchangeably by providers
+when describing teaching and learning activities. Both describe a method of delivery which
+involve activities that happen away from the physical site of a provider with students using 
+4
+digital means to engage with a programme, rather than having any requirement to visit the
+provider. However, both terms have connotations leading to some providers clearly
+favouring one over the other as they seek to clearly articulate what they are offering their
+students.
+Distance learning is a term that was in use before the widespread proliferation of digital
+approaches to learning and was initially related to courses delivered by correspondence.
+As with face-to-face learning, this term has its root in the communication style that students
+adopted to engage with members of staff responsible for delivering the programme by
+distance. This connotation has led some providers to use the term remote learning in its
+place to, in their opinion, better describe the physical location of a student and not carry any
+suggestion as to how students will be communicating with staff. However, remote learning is
+treated with caution by other providers as it is seen to classify this method of delivery as
+removed from the rest of a providers' programmes and from the provider itself.
+The difference in the connotations between the two terms means that there are small
+differences, but we have not found any fundamental difference in what they describe.
+Instead, we have found that the circumstances in which a provider finds itself have tended to
+be the driving force between the use of one term or the other. For instance, distance learning
+has been used by some providers to pitch their programmes towards clearly-defined cohorts
+of potential students, while other providers have found that this term can be viewed
+negatively when being looked at in an international context. We have also found at least
+one provider using both to articulate differences in the programmes they offer with distance
+learning being used to describe existing programmes and remote learning being used to
+refer to those programmes that have pivoted to digital delivery during the COVID-19
+situation.
+Face-to-face, in-person, on campus or onsite delivery?
+Face-to-face delivery of education and training programmes has been in common use for
+some time in the higher education sector. It has most often been used to describe an
+approach where the delivery of a programme happens at a provider with a staff member
+delivering learning and teaching directly to students. Its meaning is inextricably linked to
+communication styles and previously allowed a clear distinction to be made between
+communication in which individuals could see each other (such as a tutorial) and when they
+could not (such as a phone conversation). Given this, the use of the term face-to-face was
+used to denote if communication (and therefore delivery of some teaching and learning) was
+taking place in person or if it was taking place remotely. However, with the proliferation of
+videoconferencing, face-to-face communication can now take place when individuals are
+physically close or remote, given that individuals can see each other even if they are at a
+distance.
+In-person delivery of education and training programmes is a term that is not as widely used
+as face-to-face but is being employed by providers to outline how students will be expected
+to engage with teaching and learning activities. As it describes the physical position of the
+person who will be participating in the activities, it avoids any potential misunderstanding
+(regarding where students and staff will be located) that may arise when talking about
+face-to-face delivery. However, as with face-to-face, while in-person delivery may be
+appropriately used to describe how part of a programme is being delivered, usually it is
+not used to describe the delivery of a programme in its entirety.
+The term on campus has the same benefit as in person as it clearly articulates where the
+learning and teaching activities of a programme will take place, rather than how students and
+staff will communicate during these activities. It is a term that can also be used to describe 
+5
+how a whole programme will be delivered. This means that it can be used to avoid
+misunderstandings when certain parts of teaching and learning are directed by staff, but not
+delivered by them, in person. However, on campus is most appropriate for providers that
+have campus-based sites of delivery. For those providers who do not have a campus, or for
+those who have delivery sites outside of a main campus, onsite delivery is more appropriate.
+As a term, it is not as widely recognised as the others, but when used appropriately, may
+ensure that there are fewer misunderstandings when communicating a type of delivery to
+students.
+Social or physical distancing?
+Social distancing is terminology used by UK governments to describe the requirement for
+individuals to maintain a safe distance to avoid catching or spreading coronavirus. While
+social distancing is the phrase in most common use in health advice, the connotation of
+social distance has impacts for learning and teaching. Learning is, at least in part, a social
+experience and that collaboration and the formation of social learning networks should still
+be possible and are very much to be encouraged, even if students are not onsite together.
+Using the term social distancing, therefore, may create a perception that there is a greater
+distancing required than just the physical space between two people.
+Physical distancing, similarly, describes the requirement for individuals to maintain a safe
+distance from one another. It is not yet as common in its usage as social distancing but is
+becoming more recognised within higher education and more widely used. Physical
+distancing also does not suffer the same connotation as social distancing as it limits the
+perception of the distancing to the physical space. This frees it from any suggestion that staff
+or students should distance socially as well as physically.
+In the classifications set out below, you should be able to see how we have attempted to use
+some of these terms in a consistent way to articulate the types of experiences a student may
+have when engaging with different types of digital learning. 
+6
+Section 2: Building a taxonomy of students' digital experience
+Through defining the terms above and in creating the glossary, it is clear that, currently,
+there is no easily understood way in which different approaches to digital learning can be
+compared. Therefore, providers have understandably struggled to ensure that applicants
+are clear about what they should expect from the digital education on offer, and how this
+compares to other programmes. This can hinder prospective students' ability to make
+informed choices about the programmes to which they would like to apply. In an attempt to
+help ameliorate this situation, we have developed broad classifications of digital learning.
+Classifying the methods of delivering digital learning and teaching activities is, as
+demonstrated above, fraught with challenges given the connotations of some umbrella terms
+and the similarity of others. As providers use terms most appropriate to their context, cohorts
+and programmes, it was felt that any classification system that focused on methods of
+delivery would, inevitably, be suitable only for a proportion of providers. Therefore, the focus
+of this classification is on how providers intend their students to engage with digital learning
+activities, rather than trying to classify the approaches themselves. In classifying the type of
+engagement that students can expect, we hope that providers may be better able to help
+students clearly understand and compare different approaches.
+This classification does not make any judgement about the quality of learning experience
+that students will have. Instead, it attempts to categorise and describe the different student
+experiences depending on the type and volume of any digital engagement. In formulating
+these classifications, we have taken into account students' engagement with digital
+resources, physical location, technology, software, each other and support services. We
+accept that in practice, there is a spectrum of experiences between the students having little
+or no digital teaching or learning and having a fully immersive experience where all the
+teaching and learning is delivered digitally, which do not fit neatly into these five categories.
+Passive digital engagement/experience
+Where little or no aspect of the learning and teaching activity on offer is designed to be
+delivered digitally. Students will not experience any digital aspects of a programme unless
+there is a reason for them to seek them out and engage with them on their own terms.
+Programme design Learning and teaching activities are designed to be delivered and
+engaged with onsite at the provider, emphasising the physical,
+in-person aspects of learning. Teaching and learning activities
+may make use of digital presentation tools. Assessments are
+designed to be undertaken and submitted in an analogue format,
+although some digital submission of assessed work may be
+permitted.
+Resources offered to
+students
+Little or no digital teaching or learning focused resource will be
+offered to students, with most resources provided in analogue
+format, onsite. Some programme information, such as handbooks
+or regulations may be accessible digitally.
+Teaching and
+learning approach
+Onsite, physical engagement. There will be a focus on lectures
+and tutorials delivered onsite possibly involving skills instruction,
+or other lab/workshop/studio/performance space sessions. 
+7
+Technology used to
+facilitate modes of
+delivery
+Usually limited to a provider's website, digital presentation tools
+(such as PowerPoint) and readily available software for
+communication (for example, Zoom or Teams). A virtual learning
+environment may be provided but will primarily be used as a
+repository for programme documentation, allowing students to
+access this if they choose to.
+Provider support
+offered to students
+Primarily, support is offered to students onsite. Students may be
+able to access some support digitally via email, phone or
+videoconference.
+Personalisation Limited opportunity to personalise engagement with the learning
+and teaching. All students will be provided with the same
+resources, and teaching is designed to be experienced by a cohort
+synchronously.
+Supportive digital engagement/experience
+Where some of the learning and teaching activities developed by a provider are supported
+by digital support materials. Students will primarily experience these activities onsite, at the
+provider, but may choose to engage with digital learning resources to support their learning
+even though they are not a required part of a programme.
+Programme design Learning and teaching activities are designed to be delivered and
+engaged with onsite, and supplemented with digital resources.
+Assessments are designed to be undertaken and submitted in
+analogue format(s), although some digital submission of assessed
+work may be permitted.
+Resources offered to
+students
+Digital learning focused resource will be offered to students to
+supplement other resources provided onsite. Teaching and
+learning materials, such as lecture notes, will often be made
+available digitally, usually after the onsite activities have been
+delivered. Most programme information, such as handbooks or
+regulations will be accessible digitally.
+Teaching and
+learning approach
+There will be an emphasis on lectures and tutorials delivered
+onsite, possibly involving skills instruction, or other
+lab/workshop/studio/performance space sessions. These may be
+supplemented by video sessions or the use of lecture capture
+technology to allow students to engage with this learning digitally.
+Technology used to
+facilitate delivery
+An expectation that digital presentation tools will be used as well
+as readily available software for communication. A virtual learning
+environment will be provided and there will be greater
+engagement with staff and between students using either the
+virtual learning environment or other platforms. There will also be
+a repository for programme support documentation and other
+digital resources designed to support teaching and learning
+activities.
+8
+Provider support
+offered to students
+Support is likely to be offered to students onsite but supplemented
+with digital support mechanisms. Students may be able to access
+similar support digitally via email, phone or videoconference.
+Personalisation Some opportunities to personalise engagement with the learning
+may be offered. Often this will be through engagement with
+support materials. All students may be offered the same access to
+any digital support materials but will be able to choose how, and
+the extent to which, they want to access it. Teaching is likely to be
+designed to be experienced by a cohort synchronously.
+Augmented digital engagement/experience
+Where learning and teaching activities developed by a provider are designed with digital
+learning aspects as a core part of the engagement, intended to enhance students'
+experience of onsite learning. Students will be required to engage with digital aspects of
+learning but can choose the extent of their engagement depending on subject and type of
+digital learning activity.
+Programme design Learning and teaching activities are designed to be delivered and
+engaged with onsite, with digital activities being included as
+integral parts of these activities. Assessments are designed to be
+both undertaken and submitted in either digital or analogue format,
+with some digital approaches to marking being designed.
+Resources offered to
+students
+Most digital teaching or learning focused resource will be offered
+to students with only some designed to be offered only onsite.
+Most teaching and learning materials, such as lecture notes, will
+be made available digitally. All programme information, such as
+handbooks or regulations will be accessible digitally.
+Teaching and
+learning approach
+While the bulk of teaching and learning will take place onsite,
+some will have digital elements or be delivered entirely digitally.
+Any skills instruction, or other lab/workshop/studio/performance
+space sessions will usually be delivered onsite, with a blend of
+digital and onsite delivery of lectures, tutorials and seminars.
+Lecture capture technology is likely to be used to allow students to
+determine how, and when, they want to engage with some
+learning and teaching activities.
+Technology used to
+facilitate delivery
+Advanced digital presentation tools (requiring student
+involvement) are likely to be used as well as readily available or
+bespoke software for communication between staff or students.
+A virtual learning environment will have been designed to facilitate
+digital teaching and learning activities, potentially hosting the
+software that enables students to engage with staff and each
+other. While there will be access to a repository of digital
+information, students will be encouraged to engage with the digital
+tools available when undertaking most of their teaching and
+learning activities. The platforms used to support these activities
+will enable personalisation of the student experience. Where
+appropriate, specialist software and platforms will be offered to
+students to enable them to further engage with their learning. 
+9
+Provider support
+offered to students
+Support is likely to be offered to students onsite but similar support
+may be offered digitally. Students may be offered follow-up digital
+support after engaging initially onsite. Digital support may be
+offered when onsite support is not available.
+Personalisation Students may be offered a number of ways to personalise their
+engagement with the learning and teaching. All students will be
+offered access to the same digital resources, but they may be able
+to choose how, and the extent to which, they want to access it.
+Teaching is mainly designed to be experienced by a cohort
+synchronously, but activities are designed to allow asynchronous
+engagement.
+Interactive digital engagement/experience
+Where digital learning and teaching activities are designed by a provider as the primary way
+in which students will engage, both with the programme and with each other. Students will
+be required to be actively engaged with these digital activities and will have less choice
+about this engagement. Some learning and teaching may be available onsite, at a provider,
+but this will not be a required part of a programme.
+Programme design Learning and teaching activities are likely to be designed to use
+both digital and onsite delivery, allowing a seamless transition
+between the two. The majority of the teaching and learning
+resources offered to students is likely to be digital with some
+available onsite. This could be supported by some optional
+attendance onsite.
+Resources offered
+to students
+Analogue teaching or learning focused resource will be offered to
+students only to supplement other digital resources. Teaching and
+learning materials, such as lecture notes, will only be made
+available digitally, usually after the digital activities have been
+delivered. Most programme information, such as handbooks or
+regulations, will only be accessible digitally.
+Teaching and
+learning approach
+Teaching and learning is likely to be delivered almost exclusively
+digitally. There will be an emphasis on lectures and tutorials
+delivered digitally, with skills instruction conducted via
+videoconference. Some limited lab/workshop/studio/performance
+space sessions may be offered onsite at the provider. These may
+be supplemented by other, less formal onsite activities to allow
+students to engage with their cohort or staff in person.
+Technology used to
+facilitate delivery
+A fully integrated use of a virtual learning environment that will form
+students' main point of engagement with teaching and learning
+activities and the rest of their cohort. Specialist software and
+platforms will be offered to students to enable them to further
+engage with their learning, should they want to.
+Provider support
+offered to students
+Primarily, support is offered to students digitally. Students may be
+able to access some support onsite, but usually by appointment
+only.
+10
+Personalisation Personalisation is extensive with each student having part of their
+engagement with teaching and learning designed to meet their
+expectations. While all digital information and resources will be
+available to students, not all students will engage with those
+resources in the same way, or at the same time. Teaching is
+designed to be experienced by a cohort asynchronously, but with
+the option to engage in some synchronous elements.
+Immersive digital engagement/experience
+Where digital learning and teaching activities are designed by a provider as the only way in
+which students will engage, both with the programme and with each other. Students will be
+required to engage with all the digital activities and will not be offered the opportunity to
+engage with learning and teaching activities onsite at the provider.
+Programme design Learning and teaching activities are designed to be engaged with
+digitally, emphasising the personal experience in learning.
+Teaching and learning activities are only offered digitally with
+students expected to access digital resources to supplement these
+activities. Assessments are designed to be undertaken, submitted
+and marked digitally.
+Resources offered
+to students
+Little or no onsite teaching or learning focused resource offered to
+students, with most resources provided digitally. Some analogue
+programme information, such as handbooks or regulations may be
+accessible onsite.
+Teaching and
+learning approach
+Digital engagement. There will be a focus on lectures and tutorials
+delivered digitally, possibly involving digital skills instruction
+(overseen by experts remote from the provider), or other
+lab/workshop/studio/performance space sessions, conducted via
+videoconference.
+Technology used to
+facilitate modes of
+delivery
+It is likely that a fully integrated use of a virtual learning
+environment will form students' only point of engagement with
+teaching and learning activities and the rest of their cohort.
+Specialist software and platforms will be provided to students to
+enable them to further engage with their learning.
+Support provided to
+students
+Support is likely to be offered to students digitally through the
+virtual learning environment, email, phone, videoconference or
+chat. Students may be able to request some onsite support but this
+may not be delivered by staff or at the site of the provider.
+Personalisation The entire learning experience is designed to be personalised by
+the student. Students will determine how they engage with every
+aspect of teaching and learning to meet their expectations. While
+all digital resources will be available to students, not all students
+will engage with those resources in the same way. Teaching is
+designed to be experienced by a cohort asynchronously with
+students learning at their own pace. 
+11
+Section 3: Building a glossary
+Alongside the discussion of umbrella terms and providing a structure for a classification of
+digital learning experiences, we have highlighted a number of associated terms that are
+used when communicating what elements of digital learning are being used. These we have
+set out below, alongside definitions we have developed through understanding how they are
+being used currently in the sector. This is not intended to be an exhaustive list but
+demonstrates the variety of terms which are being used and highlights the potential
+challenges faced by students when trying to get a clear understanding as to what their
+provider is offering them.
+Term Usage/definition
+Assessment - computer-based An assessment that is conducted using a desktop
+computer, laptop, tablet or mobile device. Typically,
+the assessment is both delivered and marked by an
+algorithm included in the assessment software
+loaded on the device. This term can also encompass
+automatic online assessment.
+Assessment - online An assessment that is conducted using a desktop,
+laptop or tablet device that is connected to the
+internet. Typically, the assessment is both delivered
+and marked by an algorithm included in the
+assessment software that is hosted on a remote
+server (or alternate device).
+Assistive technology A piece of equipment or system that is used to
+improve or enhance digital learning access and
+capability. This is particularly important to individuals
+with disabilities or difficulties in engaging with digital
+approaches to learning.
+Asynchronous learning Learning that does not occur in the same place or at
+the same time for a whole cohort. Students can
+access resources and communicate at any time and
+are not restricted to accessing this learning at any
+specific time. Enables students to learn at their own
+pace in their own time.
+Augmented reality (AR) Augmented reality is a process that overlays digital
+learning or teaching content onto the physical world.
+This term can also encompass mixed reality or MR.
+Bring your own device A term used to describe where students use their
+own devices to access digital resources to support
+learning activity.
+Cloud-based hosting Cloud-based hosting is the process of outsourcing an
+organisation's computing and storage resources to a
+remote service provider. Some or all of the resources
+required to deliver a programme can be stored and
+accessed by staff and students via the cloud using
+appropriate software and devices. Multiple users can
+access these resources at any one time. 
+12
+Collaborative digital learning An educational approach to learning that involves
+groups of learners working together, via digital
+means, to complete a task.
+Content curation Selecting, assembling, categorising and commenting
+on digital information for a particular purpose.
+Content library A content library is similar to a traditional library and
+is a digital store of folders and files which can be
+accessed by authorised users.
+Content management system A content management system is an application that
+is used to consistently manage content (for example,
+documents, images, videos) and allow multiple
+contributors to create, edit and publish content.
+Digital access The ability to participate in learning through digital
+means. This includes providing appropriate hardware
+and software to facilitate access to digital learning.
+Digital assessment Assessment activities that involve students digitally
+creating, submitting or completing work. Staff review
+this work and then either assess it using digital or
+analogue means to assess the work. Examples
+include digital examinations, plagiarism-detection
+software, virtual reality simulations, video
+performances or digital portfolios.
+Digital cheating Cheating is any action which is intended to enable a
+student to achieve an unfair academic advantage or
+to assist another student to do so. This includes, for
+example, plagiarism, collusion, use of 'contract
+cheating' services, examination cheating (for
+example, through accessing unauthorised materials
+in an exam), or falsification of research data. Digital
+cheating is cheating which occurs in a digital
+environment. Some forms of cheating may be more
+likely to occur in a digital environment where digital
+mechanisms may make them more easily accessible,
+although conversely digital mechanisms are used to
+assist in detecting cheating (for example, through
+anti-plagiarism software and digital proctoring).
+Digital learning objects Modular or discrete units of learning designed for
+digital delivery.
+Digital literacy An individual's ability to use digital information and
+relevant technologies to find, evaluate, create and
+communicate information. This type of literacy
+requires cognitive and technical skills. 
+13
+Digital poverty The recognition that some students have less or
+inferior access to devices by which to engage with
+digital approaches to learning. This also extends to a
+lack of access to an internet connection with little or
+no bandwidth which would negatively impact the
+quality of their digital learning experience.
+Digital proctoring A term to describe a form of invigilation for digital
+examinations. This can be done through the use of
+artificial intelligence (for instance, using face or voice
+recognition) or through using staff to proctor via a
+real-time video link. This can encompass the term
+online proctoring.
+Discussion board A more formal digital communications space or
+platform where students (and staff) can discuss and
+share elements of their programme. The Board could
+be specific to a module or programme or a
+community of students. Discussion boards are often
+highly structured around a topic and can be closely
+moderated to ensure that discussions are
+appropriate to that topic. Also see discussion forum.
+Discussion forum A less formal digital communication space which can
+be used to engage students in a wider discussion on
+a number of topics or subjects. Often forums are less
+structured than discussion boards but require similar
+moderation to ensure that discussions remain
+appropriate. Also see discussion board.
+E-book A virtual book acquired digitally as an alternative to a
+physical book. This is usually accessed digitally
+through virtual or digital libraries and portals.
+E-portfolio Where students are required to develop a body of
+digital work or evidence in order to demonstrate their
+skills in a given area, for example, games design or
+digital media. As with physical portfolios, e-portfolios
+can consist of several different types of evidence
+such as documents, reflective logs, images, videos,
+websites, blogs.
+Flipped learning A pedagogical approach which provides detailed
+individual instruction to individual students placing
+the onus on them to use digital resources to gain
+understanding of content, concepts or theories
+related to learning outcomes. This happens outside
+of a physical space. Students are then invited into a
+virtual or physical space to articulate and discuss
+their findings and are guided by teaching staff to
+ensure that gaps in knowledge are filled and further
+enquiries directed appropriately. This approach is
+designed to 'flip' the more didactic approach of
+lecture or tutorial-based instruction, followed by a
+more flexible approach to articulating what has been
+learned and any further enquiry. 
+14
+Flexible learning Using different modes of study and technologies of
+learning to enable students to manage their studies
+around other commitments and priorities and
+providing freedom of choice for learners of ways and
+times to learn, for example, through digital lectures or
+evening learning sessions.
+Gamification Method of teaching using games principles to
+enhance learning and engagement. This often
+involves the application of game-design elements
+and principles in non-game contexts, for instance, a
+set of activities and processes to solve problems by
+using or applying the characteristics of game
+elements. Often, this manifests as students being
+set, and completing, a series of tasks which
+contribute to reaching an overall goal. The aim of this
+approach is to maximise students' enjoyment and
+engagement through capturing their interest and
+inspiring them to continue learning.
+Guided learning When a student is being taught, supervised or
+instructed by an assessor, tutor or another person
+who facilitates learning and development. Guided
+learning takes place whether both physically - onsite
+at a provider - or remotely via digital means.
+Mark/grade management system A digital system of managing assessment grades
+and delivering marks to students.
+Independent study/guided
+independent study
+Study activity occurring outside lecture, seminar and
+other face-to-face activities with the teacher/lecturer.
+Usually involves reading and/or research undertaken
+by a student without the guidance of a member of
+teaching staff.
+Learning management system Digital design and delivery platform - usually
+accessed using devices - which enables various
+methods of teaching and learning delivery to be
+used. Through a learning management system, a
+provider can use, for example, video or podcasts to
+support and enhance digital learning methods.
+Lecture capture Where a live lecture is recorded and is uploaded as a
+digital video or podcast for students to view, either in
+real-time or after the lecture has finished.
+Massive open online courses
+(MOOCs)
+Short digital courses that students complete digitally,
+as there is no requirement for any physical
+attendance at a provider. They are most often open
+to a wide audience and not limited to those students
+already registered with an institution. While often
+based on learning and teaching delivered as part of a
+degree programme, they are not necessarily
+component parts of a larger programme and, as
+such, students who complete these short courses
+often do not receive academic credit. However, some
+students, on successful completion of their short 
+15
+course, may be offered advanced standing for entry
+to a programme at the provider offering the MOOC
+which does carry academic credit.
+Microlearning Small learning activities to demonstrate a specific
+skill or focus on a knowledge gap or term.
+Mobile learning The use of mobile devices (for example, phones or
+tablets) in teaching and learning activity. This term
+can encompass more traditional learning activities
+(such as reading digital versions of journals) or less
+traditional activities such as engaging in virtual
+simulations.
+Online labs A term to describe ways of replicating activities in
+physical labs such as simulations, experiments,
+virtual reality field trips and lab casts which connect
+staff and students through live streaming.
+Offline learning Offline learning takes place when students who are
+studying on a digital programme are involved in
+learning activity that does not involve digital
+engagement, for example, a student producing
+non-digital forms of creative work.
+Pedagogy first An approach to the development of digital learning in
+which the pedagogical approaches to be taken in the
+delivery of the programme are placed at the forefront
+and regarded as a key driver in the programme
+development and design process.
+Personalised learning Personalised learning is an educational approach
+that aims to customise learning for each student's
+strengths, needs, skills and interests. Students can
+have a degree of choice in how they learn as
+compared to the face-to-face lecture approach.
+Platform In the context of e-learning, platform would normally
+describe the software infrastructure on which a virtual
+learning environment (VLE) is constructed.
+Podcast An audio file made available digitally, often a radio
+broadcast, which can be downloaded to a device.
+Portal A web-based platform that provides a 'front door' for
+links to key sources of information. A student portal
+might, for example, provide links to a VLE, student
+email, learning resources and student support
+services.
+Screen capture tool and
+screencast
+Screen capture is software which allows a
+screenshot to be taken, annotated and edited.
+Screencast is a video recording of the screen on a
+person's device so that it can be shared with others.
+Audio or written explanatory commentary can be
+added. 
+16
+Social learning Social learning can be used to describe discussion
+board or forum participation, as well as any other
+groupwork activity that takes place digitally, where
+students discuss and learn from each other.
+Synchronous learning Learning that takes place with participants all
+engaging with material in real time, although not
+necessarily in the same place (for example, some
+students may participate onsite while others may
+participate remotely, both at the same time).
+Technology enhanced learning Technology enhanced learning is an overarching
+term to describe the use of technology to support
+learning, teaching and assessment and to enhance
+the student experience. Technology enhanced
+learning can support teaching and learning both
+onsite and remotely. The term web enhanced
+learning is sometimes used synonymously with
+technology enhanced learning; although the former
+is, by definition, a more focused term relating to all
+technology used to support learning while web
+enhanced learning focuses on the connectivity and
+the use of web-enabled resources.
+Vodcast A video file made available digitally, often a video
+version of a radio broadcast, which can be
+downloaded to a device. This term can also
+encompass Vlogs.
+Virtual classroom A digital environment provided through a virtual
+learning platform, which replicates the physical
+classroom in a virtual way, allowing tutors and staff to
+communicate, interact and engage synchronously in
+teaching and learning activities.
+Virtual learning environment (VLE) A platform for supporting learning and teaching
+(particularly digital learning) and providing a space
+for learning resources. The precise functions and
+facility provided by each platform will vary and there
+will be options to customise and add packages
+depending on needs. In most cases, a VLE will, as a
+minimum, provide a repository for documentation (for
+example, programme/module information, timetables,
+policies and procedures), provide a message facility
+and support the submission of assessments and
+provision of feedback on assessed work.
+Webinar A web-based learning or training activity, usually
+interactive, for example, a workshop or seminar.
+Webinars take place synchronously using video
+conferencing software, with participants taking part
+digitally. Webinars may be recorded and made
