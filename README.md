@@ -1,6 +1,6 @@
 # Visualisations using Open Source Educational Data
 
-This repository contains code, outputs and data sources used for data visualisations.
+This repository contains code, outputs and data sources used for data visualisations and interactive Shiny App.
 
 Includes web scraping, text mining, geospatial mapping, plotly charts and interactive tables.
 
