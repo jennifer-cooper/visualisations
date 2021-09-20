@@ -1,0 +1,38 @@
+﻿Title,Graduate outcomes by activity and academic year,
+Location,UK,
+Academic years,2017/18 to 2018/19,
+Data source,HESA / OfS / DfE(NI),
+Sourced from,https://www.hesa.ac.uk/news/20-07-2021/sb260-higher-education-graduate-outcomes-statistics,
+Reference ID,SB260 Figure 1,
+Data source link,https://www.hesa.ac.uk/data-and-analysis/sb260/figure-1,
+Data file canonical link,https://www.hesa.ac.uk/data-and-analysis/sb260/figure-1.csv,
+Licence,Creative Commons Attribution 4.0 International Licence,
+Code page,Unicode UTF-8,
+Disclaimer,Please note that this data includes rounded totals. Caution must be taken when importing into a pivot table so as not to double count.,
+Last updated:,Jul-21,
+,,
+Activity,Academic year,% of Total
+Full-time employment,2017/18,59%
+Part-time employment,2017/18,10%
+Unknown pattern of employment,2017/18,1%
+Voluntary or unpaid work,2017/18,1%
+Employment and further study,2017/18,10%
+Full-time further study,2017/18,8%
+Part-time further study,2017/18,1%
+Unknown pattern of further study,2017/18,0%
+"Other including travel, caring for someone or retired",2017/18,6%
+Unemployed and due to start work,2017/18,1%
+Unemployed and due to start further study,2017/18,0%
+Unemployed,2017/18,4%
+Full-time employment,2018/19,56%
+Part-time employment,2018/19,11%
+Unknown pattern of employment,2018/19,1%
+Voluntary or unpaid work,2018/19,1%
+Employment and further study,2018/19,11%
+Full-time further study,2018/19,8%
+Part-time further study,2018/19,1%
+Unknown pattern of further study,2018/19,0%
+"Other including travel, caring for someone or retired",2018/19,5%
+Unemployed and due to start work,2018/19,1%
+Unemployed and due to start further study,2018/19,0%
+Unemployed,2018/19,5%
