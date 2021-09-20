@@ -4,7 +4,7 @@ This repository contains code, outputs and data sources used for data visualisat
 
 Includes web scraping, text mining, geospatial mapping, plotly charts and interactive tables.
 
-Full interactive visualisation html download [here](https://github.com/jennifer-cooper/visualisations/tree/main/outputs)
+Full interactive visualisation html download [here](https://github.com/jennifer-cooper/visualisations/tree/main/outputs). Click on the file, click download and then file>Save Page as to save the html to your computer.
 
 Open data sources include the following:
 
