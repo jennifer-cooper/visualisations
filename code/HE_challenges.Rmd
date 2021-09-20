@@ -1,0 +1,607 @@
+---
+title: "Challenges Facing the Higher Education Sector"
+author: "Jennifer Cooper"
+date: "20/09/2021"
+output: html_document
+---
+
+```{css style settings, echo = FALSE}
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    border-left: 5px solid;
+}
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+#Libraries
+library(plotly)
+library(tidyverse)
+library(DT)
+library(stringr)
+library("kableExtra")
+library(rvest)
+
+library(sf)
+library(geojsonsf)
+library(sp)
+library(zoo)
+library(tidyverse)
+library(leaflet)
+library(shinythemes)
+library(shiny)
+library(leaflet.extras)
+
+library(tm)
+library(wordcloud2)
+
+#-------------------------------------------------------------------------
+#Word cloud digital taxonomy report
+#-------------------------------------------------------------------------
+# Read in text file (can use webscraping or save a report as .txt file)
+filePath <- "taxonomy_digital_learning.txt"
+text <- readLines(filePath)
+
+#Convert this text object into a corpus - file used for text mining
+corpus_txt <- Corpus(VectorSource(text))
+
+
+# Strips whitespace, punctuation and common stopwords
+corpus_txt <- corpus_txt %>%
+  tm_map(removeNumbers) %>%
+  tm_map(removePunctuation) %>%
+  tm_map(stripWhitespace)
+corpus_txt <- tm_map(corpus_txt, content_transformer(tolower))
+corpus_txt <- tm_map(corpus_txt, removeWords, stopwords("english"))
+
+
+# Creates dataframe which ranks word frequencies into a dataframe
+dtm <- TermDocumentMatrix(corpus_txt)
+m <- as.matrix(dtm)
+v <- sort(rowSums(m),decreasing=TRUE)
+word_df <- data.frame(word = names(v),freq=v)
+
+
+#-------------------------------------------------------------------------
+#Web-scraping
+#-------------------------------------------------------------------------
+link = 'https://universitybusiness.co.uk/comment/8-biggest-challenges-for-universities-in-2021/'
+page = read_html(link)
+
+headings = page %>% html_nodes(".elementor-widget-theme-post-content h2") %>% html_text()
+
+challenges<- data.frame(headings)
+
+challenges[grepl(" ", challenges$headings),] ->challenges
+
+challenges<- data.frame(challenges)
+#-------------------------------------------------------------------------
+
+link = 'https://www2.deloitte.com/uk/en/pages/public-sector/articles/seven-key-challenges-faced-by-universities.html/'
+page = read_html(link)
+
+bold = page %>% html_nodes("b") %>% html_text()
+bold <- bold[-1][-1]
+bold <-str_remove(bold, ":")
+bold<- data.frame(bold)
+
+bold %>% 
+rename(challenges = bold) ->bold
+
+rbind(challenges, bold) ->challenges
+
+#-------------------------------------------------------------------------
+link = 'https://www2.deloitte.com/uk/en/pages/public-sector/articles/trends-affecting-education-sector.html/'
+page = read_html(link)
+bold = page %>% html_nodes("b") %>% html_text()
+bold <- bold[-1][-1]
+bold<- data.frame(bold)
+
+bold %>% 
+  rename(challenges = bold) ->bold
+
+
+#-------------------------------------------------------------------------
+rbind(challenges, bold) -> challenges
+
+challenges %>% 
+  rename(Challenges = challenges) ->challenges
+
+challenges$Number <- seq.int(nrow(challenges))
+
+challenges %>% 
+  select(Number, Challenges)-> challenges
+
+
+#-------------------------------------------------------------------------
+#Geospatial Mapping
+#-------------------------------------------------------------------------
+
+sf<- geojson_sf("Region_(December_2015)_Boundaries_ultra.geojson")
+spdf<- as_Spatial(sf)
+
+plot(spdf)
+#-------------------------------------------------------------------------
+#Read in COVID-19 case data
+
+positive_cases <- read.csv('region_2021-09-15.csv')
+
+#-------------------------------------------------------------------------
+#-------------------------------------------------------------------------
+#University institution location markers
+#-------------------------------------------------------------------------
+location <- read.csv("LOCATION.csv") %>% select(UKPRN, LATITUDE, LONGITUDE)
+ukprn_lookup<- read.csv("ukprn_lookup.csv")
+
+
+#Group by ukprn and take the first row as multiple records
+location %>% 
+  group_by(UKPRN) %>% 
+  filter(row_number()==1) ->location
+
+
+ukprn_lookup %>% 
+  inner_join(location, by="UKPRN") -> location_markers
+
+#Can add on all sorts of other information if needed from the other Unistats datasets
+#e.g.
+numbers_insts<- read.csv("numbers_institutions amended.csv") %>% select(-"HE.provider")
+
+#May want to do an inner_join here instead to keep only complete data examples of Unis
+
+
+location_markers %>% 
+  inner_join(numbers_insts, by="UKPRN") -> location_markers
+
+
+
+#-------------------------------------------------------------------------
+#graduateoutcomes1
+#-------------------------------------------------------------------------
+#Data and cleaning code
+setwd("~/Desktop/JISC")
+grad_employment <- read.csv("grad_employment.csv")
+
+str(grad_employment)
+#-------------------------------------------------------------------------
+#Clean data
+
+#Rename columns
+
+grad_employment %>% 
+  rename(pct_of_total="X..of.Total",
+         Academic_year="Academic.year") -> grad_employment
+
+#Remove % and make the final column into numeric format
+grad_employment$pct_of_total<- as.numeric(str_remove(grad_employment$pct_of_total, "%"))
+
+#Replace '/' with underscore for 2017/2018 and 2018/2019 as var names need to be accepted
+
+grad_employment$Academic_year <- gsub("/", "_", grad_employment$Academic_year)
+
+
+#-------------------------------------------------------------------------
+#Change structure of data for plotting, long to wide format
+
+grad_employment %>%
+  pivot_wider(names_from = Academic_year, values_from = pct_of_total, names_prefix="x") -> grad_employment
+
+#-------------------------------------------------------------------------
+#graduateoutcomes2
+#-------------------------------------------------------------------------
+provider_activity_graduate <- read.csv("provider_activity_graduate.csv")
+#-------------------------------------------------------------------------
+#Clean data
+#We just want those institutions in England, undergraduate and remove total as an institution
+
+tail(provider_activity_graduate, -15) -> provider_activity_graduate
+
+#names(provider_activity_graduate)
+
+provider_activity_graduate %>% 
+  rename(UKPRN=Title,
+         provider_name = Graduate.activities.by.provider..country.of.provider..student.domicile..level.of.qualification.obtained..mode.of.former.study..interim.study.and.academic.year,
+         country_of_provider=X,
+         domicile=X.1,
+         level_of_qualification=X.2,
+         mode=X.3,
+         interim=X.4,
+         activity=X.5,
+         academic_year=X.6,
+         number=X.7,
+         percent=X.8,
+         ci=X.9) -> provider_activity_graduate
+
+provider_activity_graduate %>% 
+  filter(country_of_provider=="England" &  
+           domicile=="UK" & 
+           level_of_qualification=="Undergraduate" & 
+           activity=="Full-time employment" & 
+           mode=="Full-time",
+           interim=="Exclude significant interim study") ->provider_activity_graduate
+
+#We want both 2017/2018 and 2018/2019 for comparisons so remove any with just one year
+provider_activity_graduate %>% 
+  group_by(provider_name) %>% 
+  add_count() -> provider_activity_graduate
+
+
+provider_activity_graduate %>% 
+  filter(n==2)-> provider_activity_graduate
+
+#Remove any institutions with missing data
+
+provider_activity_graduate %>% 
+  filter(percent!="") ->provider_activity_graduate
+
+#-------------------------------------------------------------------------
+#For the interactive table we only need certain columns so take a smaller version of data
+
+provider_activity_graduate %>% 
+  select(provider_name, academic_year, activity, number, percent, ci) -> provider_activity_graduate
+
+#-------------------------------------------------------------------------
+#Make some of the variables numeric
+
+provider_activity_graduate$number<- as.numeric(provider_activity_graduate$number)
+
+provider_activity_graduate$percent<- as.numeric(str_remove(provider_activity_graduate$percent, "%"))
+
+#-------------------------------------------------------------------------
+#Academic and Social Experience
+#-------------------------------------------------------------------------
+
+aca_exp<- read.csv("academic_exp.csv")
+social_exp<- read.csv("social_exp.csv")
+student_diss<- read.csv("student_ex_diss_reason.csv")
+#-------------------------------------------------------------------------
+
+```
+
+Visualisations using Open Source Education Data.
+
+I have made this code Open Source and fully documented on my [GitHub page](https://github.com/jennifer-cooper/visualisations)
+
+<br><br>
+
+***
+
+## Overview of Challenges Facing the Higher Education Sector
+
+* A keyword search term in journals identified a few relevant papers: [COVID-19 and digital disruption in UK universities](https://link.springer.com/article/10.1007/s10734-020-00561-y) 
+* A quick general Google also identified articles from JISC, Deloitte and other White Papers
+* I used webscraping of the key terms to generate the following table of challenges from 3 webpages [1](https://universitybusiness.co.uk/comment/8-biggest-challenges-for-universities-in-2021/) [2](https://www2.deloitte.com/uk/en/pages/public-sector/articles/seven-key-challenges-faced-by-universities.html) [3](https://www2.deloitte.com/uk/en/pages/public-sector/articles/trends-affecting-education-sector.html/)
+
+<br><br>
+
+```{r table}
+
+challenges[2] <- cell_spec(challenges[[2]], color = "white", bold = T,
+    background = spec_color(1:10, end = 0.9, option = "A", direction = -1))
+
+kbl(challenges, escape = F, align = "c") %>%
+  kable_classic("striped", full_width = F)
+
+```
+
+<br><br>
+
+* Producing a word cloud of a report can help to visualise key areas of interest ([Quality Assurance Agency Taxonomy for Digital Learning](https://www.jisc.ac.uk/guides/digital-learning-in-higher-education))
+* Increased digitalisation is a challenge (and opportunity) for the higher education sector (associated words):
+
+<br><br>
+
+```{r wordcloud}
+#Need to use wordcloud2a function or the other plots will not render as per (https://github.com/rstudio/shinydashboard/issues/281)
+wordcloud2a <- function (data, size = 1, minSize = 0, gridSize = 0, fontFamily = "Segoe UI", 
+          fontWeight = "bold", color = "random-dark", backgroundColor = "white", 
+          minRotation = -pi/4, maxRotation = pi/4, shuffle = TRUE, 
+          rotateRatio = 0.4, shape = "circle", ellipticity = 0.65, 
+          widgetsize = NULL, figPath = NULL, hoverFunction = NULL) 
+{
+  if ("table" %in% class(data)) {
+    dataOut = data.frame(name = names(data), freq = as.vector(data))
+  }
+  else {
+    data = as.data.frame(data)
+    dataOut = data[, 1:2]
+    names(dataOut) = c("name", "freq")
+  }
+  if (!is.null(figPath)) {
+    if (!file.exists(figPath)) {
+      stop("cannot find fig in the figPath")
+    }
+    spPath = strsplit(figPath, "\\.")[[1]]
+    len = length(spPath)
+    figClass = spPath[len]
+    if (!figClass %in% c("jpeg", "jpg", "png", "bmp", "gif")) {
+      stop("file should be a jpeg, jpg, png, bmp or gif file!")
+    }
+    base64 = base64enc::base64encode(figPath)
+    base64 = paste0("data:image/", figClass, ";base64,", 
+                    base64)
+  }
+  else {
+    base64 = NULL
+  }
+  weightFactor = size * 180/max(dataOut$freq)
+  settings <- list(word = dataOut$name, freq = dataOut$freq, 
+                   fontFamily = fontFamily, fontWeight = fontWeight, color = color, 
+                   minSize = minSize, weightFactor = weightFactor, backgroundColor = backgroundColor, 
+                   gridSize = gridSize, minRotation = minRotation, maxRotation = maxRotation, 
+                   shuffle = shuffle, rotateRatio = rotateRatio, shape = shape, 
+                   ellipticity = ellipticity, figBase64 = base64, hover = htmlwidgets::JS(hoverFunction))
+  chart = htmlwidgets::createWidget("wordcloud2", settings, 
+                                    width = widgetsize[1], height = widgetsize[2], sizingPolicy = htmlwidgets::sizingPolicy(viewer.padding = 0, 
+                                                                                                                            browser.padding = 0, browser.fill = TRUE))
+  chart
+}
+
+
+wordcloud2a(word_df, backgroundColor = "white")
+```
+
+<br><br>
+
+***
+
+## Focus on the Effect of COVID-19 on Higher Education for the rest of this document
+
+* This has accelerated digitalisation
+* Increased focus on student wellbeing
+* Has had some advantages (reducing some barriers to learning, largely through technology)
+* Challenges include whether students feel they are getting value for money, student wellbeing during isolation, prospective job market for recent graduates
+
+<br><br>
+
+***
+
+# Community cases in a particular region will determine future lockdowns and therefore online offerings
+
+* Blended/hybrid learning
+* Flexibility of the institution to offer online materials (Staff/Student perspective)
+* Libraries offering more online resources, webchat services etc
+
+5 Open Datasets:
+
+1. [data.gov for COVID-19 data](https://coronavirus.data.gov.uk/details/download)
+
+2. [geoportal gov.uk GIS regional boundaries](https://geoportal.statistics.gov.uk/maps/ons::region-december-2015-boundaries/about)
+
+3. [ONS data regional population estimates for case rates](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland)
+
+4. [HESA numbers in HE by Institution](https://www.hesa.ac.uk/data-and-analysis/students/whos-in-he)
+
+5. [Unistats HESA Latitude and longitude HE](https://www-hesa-ac-uk.azurewebsites.net/support/tools-and-downloads/unistats)
+
+<br><br>
+
+***
+
+We can obtain Higher education institution education and plot on a map of England
+
+<br><br>
+
+```{r GIS}
+
+#-------------------------------------------
+#Basic example to test
+#-------------------------------------------
+JiscIcon <- makeIcon(
+  iconUrl = "https://uxd.jisc.ac.uk/wp-content/themes/uxdtheme/assets/jisc-logo.svg",
+  iconWidth = 38, iconHeight = 95,
+  iconAnchorX = 22, iconAnchorY = 94,
+)
+
+jisc_locations <- c("Bristol", "Belfast", "Cardiff Bay", "Cheltenham", "Didcot", "Glasgow", "London", "Manchester")
+lng<- c(-2.5887163863787888, -5.966229786858929, -3.1578831023650396, -2.0788197618655433, -1.3106936311952653, -4.259398130970776, -0.10902414284008903, -2.24216785993317)
+lat<- c(51.44960071837351, 54.6010033966976, 51.467221538800324, 51.8987101649444, 51.57746625975382, 55.86140217950865, 51.51522358900154, 53.47538051846536)
+
+jisc<- data.frame(jisc_locations, lng, lat)
+
+spdf %>% 
+  leaflet(height=600, width=600) %>% 
+  addTiles(group = "OSM") %>% 
+  addProviderTiles("CartoDB", group = "Carto") %>% 
+  addPolygons(stroke = T, 
+              weight = 1,
+              color = "black",
+              fillOpacity = 0, 
+              smoothFactor = 0.5) %>% 
+  addMarkers(lng = location_markers$LONGITUDE,
+             lat = location_markers$LATITUDE,
+             label = paste0(location_markers$name, " (", format(location_markers$Total, big.mark=",", scientific = FALSE), ")")) %>% 
+  addMarkers(jisc$lng, jisc$lat, icon = JiscIcon, label = paste0("JISC Location: ", jisc$jisc_locations)) %>% 
+  setView(lng = -1.228838, lat = 52.76846, zoom = 6) %>% 
+    addResetMapButton()
+
+
+```
+
+<br><br>
+
+There is open data for regional numbers of COVID-19 cases - plotting this we can see a general trend of peak cases.
+
+<br><br>
+
+```{r covidnumbers, echo=FALSE, out.width="80%"}
+
+plot_positive_cases <- positive_cases
+
+plot_positive_cases$date<- as.Date(plot_positive_cases$date)
+
+plot_positive_cases %>% 
+  filter(date>="2021-06-01") ->plot_positive_cases
+
+plot_positive_cases %>% 
+  ggplot( aes(x=date, y=newCasesBySpecimenDate, group=areaName, color=areaName)) +
+  geom_line() +
+  scale_x_date(date_labels = "%Y %b %d", date_breaks = "weeks") +
+  ylab("Number of positive cases") +
+  xlab("Date") +
+  labs(color='Region') -> p 
+
+p + theme_classic() + theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) 
+
+```
+
+<br><br>
+
+Combining this data on the map with higher education location can give us a Shiny App (open in separate window)
+
+![](https://www.mango-solutions.com/wp-content/uploads/2021/07/shiny-image.png "Shiny App in separate window"){width=30%}
+
+<br><br>
+
+***
+
+# Graduate outcomes pre COVID-19 and during COVID-19 
+
+* Using HESA data we can look at the effects of the 2017/2018 cohort compared to the 2018/2019 cohort to look for general trends
+
+Open Data:
+[HESA Data](https://www.hesa.ac.uk/news/20-07-2021/sb260-higher-education-graduate-outcomes-statistics)
+
+<br><br>
+
+```{r graduateoutcomes1, echo=FALSE}
+
+fig <- plot_ly(grad_employment, x = ~Activity, y = ~x2017_18, type = 'bar', name = '2017 - 2018 graduates')
+fig <- fig %>% add_trace(y = ~x2018_19, name = '2018 - 2019 graduates')
+fig <- fig %>% layout(yaxis = list(title = '% of total'), barmode = 'group', title = "Graduate Activity")
+
+fig
+```
+
+<br><br>
+
+* We can also look at the percentage of graduates in full time employment across each institution in an interactive and searchable table
+
+<br><br>
+
+```{r graduateoutcomes2, echo=FALSE}
+
+datatable(provider_activity_graduate, filter = 'top', 
+          extensions = 'Buttons',
+          options = list(dom = 'Blfrtip',
+                         buttons = c('copy', 'csv', 'pdf', 'print'),
+                         lengthMenu = list(c(10,25,50,-1),
+                                           c(10,25,50,"All"))),
+)
+```
+
+<br><br>
+
+* Manipulating the data further we can plot the top 20 institutions for graduates being in full time employment with their confidence intervals.
+
+
+<br><br>
+
+```{r graduateoutcomes3, fig.width=10,fig.height=7, echo=FALSE}
+
+#regular expression substitution
+provider_activity_graduate$ci<- gsub("\\(|\\)|%", "", provider_activity_graduate$ci)
+
+#provider_activity_graduate %>% str_replace_all("\\[|\\]", "")
+
+
+str_split_fixed(provider_activity_graduate$ci, "-", 2) -> ci
+as.data.frame(ci)-> ci
+
+ci %>% 
+  rename(lower_ci= V1,
+         upper_ci = V2) ->ci
+
+
+cbind(provider_activity_graduate, ci) ->provider_activity_graduate
+
+provider_activity_graduate$upper_ci<- as.numeric(provider_activity_graduate$upper_ci)
+provider_activity_graduate$lower_ci<- as.numeric(provider_activity_graduate$lower_ci)
+
+#-------------------------------------------------------------------------
+#Take the top 20 universities and plot their full time employment with 95% CI
+
+provider_activity_graduate %>% 
+  arrange(-percent)-> top_20
+
+#We want the latest academic year
+
+top_20 %>% 
+  filter(academic_year=="2018/19") -> top_20
+
+
+head(top_20, 20) -> top_20_plot
+
+
+seq.int(nrow(top_20_plot)) ->top_20_plot$institution
+
+#-------------------------------------------------------------------------
+pd <- position_dodge(0.1) # move them .05 to the left and right
+
+ggplot(top_20_plot, aes(x=reorder(provider_name, institution), y=percent, colour=provider_name, group=provider_name)) + 
+  geom_errorbar(aes(ymin=top_20_plot$lower_ci, ymax=top_20_plot$upper_ci), colour="black", width=.1, position=pd) +
+  geom_point(position=pd, size=3)+
+  xlab("Higher Education Institution") +
+  ylab("Percentage in Full Time Employment") +
+  theme_classic() + theme(legend.position = "none", axis.text.x = element_text(angle = 90, hjust = 0.5), axis.title.x=element_blank())
+
+
+```
+
+<br><br>
+
+***
+
+# Student Wellbeing and Experience during COVID-19
+
+* COVID-19 has had an increased impact on student wellbeing
+
+>'The Student COVID-19 Insights Survey includes information on the behaviours, plans, opinions and well-being of higher education students in England in the context of guidance on the coronavirus (COVID-19) pandemic.' [SCIS Data](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandwellbeing/datasets/coronavirusandhighereducationstudents)
+
+* The below pie charts shows the responses from two questions of the survey from 2nd June 2021 (sample size 1,110, weighted count 2,076,000):
+
+`r kableExtra::text_spec("1. Since you started in the Autumn term 2020, how satisfied or unsatisfied are you with your academic experience? For example -  learning experience or academic support.
+
+2. Since you started in the Autumn term 2020,  how satisfied or dissatisfied are you with your social experience? For example - sharing time with others, meeting new people or having access to sports and fitness facilities
+", color = "blue")`
+
+<br><br>
+
+```{r studentwellbeing, echo=FALSE}
+
+fig <- plot_ly()
+fig %>% 
+add_pie(data = aca_exp, labels = ~academic_exp, values = ~number,
+        name = "Academic Exp", domain = list(row = 0, column = 0)) %>% 
+  add_pie(data = social_exp, labels = ~social_exp, values = ~number,
+          name = "Social Exp", domain = list(row = 0, column = 1)) %>% 
+  layout(title = "Academic and Student Experience", showlegend = T,
+         grid=list(rows=1, columns=2),
+         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+
+```
+* Drilling down further into the reasons for academic dissatification (very dissatisfied/dissatisfied) - learning delivery is consistently the biggest reason over the latest 4 weeks of the survey.
+
+<br><br>
+
+
+```{r studentwellbeing2, echo=FALSE}
+student_diss$survey_date<- as.Date(student_diss$survey_date, "%d/%m/%Y")
+
+
+plot_ly(student_diss, type = 'scatter', mode = 'lines+markers')%>%
+  add_trace(x = ~survey_date, y = ~percent_diss, color=~reason_diss_stud_exp) %>% 
+  layout(title = 'Reasons for dissatisfaction of academic experience',
+         xaxis = list(title = 'Survey Date'),
+         yaxis = list(title = 'Percentage for Reason (multiple responses available)')
+  )
+```
+
+
+
+
+
